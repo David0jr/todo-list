@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Minha Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>📋 Minha Lista de Tarefas</h1>
+
+    <form id="form-tarefa">
+        <input type="text" id="titulo" placeholder="Digite uma nova tarefa" required />
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Botões para Listar e Limpar Tarefas -->
+    <div style="margin-top: 10px; display: flex; gap: 10px;">
+        <button id="btn-listar">Listar Tarefas</button>
+        <button id="btn-limpar">Limpar Lista</button>
+    </div>
+
+    <ul id="lista-tarefas"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
